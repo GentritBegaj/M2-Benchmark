@@ -1,0 +1,50 @@
+body {
+  background-color: #d8d8d8;
+  font-family: "Belgrano", serif;
+}
+
+nav {
+  background-color: #2c2c2c;
+}
+
+main {
+  background-color: #d8d8d8;
+  margin-top: 30px;
+}
+
+.btn.btn-success.btn-lg {
+  position: absolute;
+  right: 0px;
+  bottom: 20px;
+}
+
+p {
+  font-size: 0.8rem;
+}
+
+.line {
+  width: 0px;
+  height: 30px;
+  /* margin-top: 10px; */
+  border: 0.5px solid rgb(130, 69, 187);
+}
+
+div a {
+  text-decoration: none;
+  color: rgb(160, 144, 144);
+}
+
+div a:hover {
+  text-decoration: none;
+}
+
+.browse-button {
+  position: absolute;
+}
+.table td:last-of-type {
+  text-align: right;
+}
+
+.nav-footer-wrapper {
+  background-color: #262626;
+}
