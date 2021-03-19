@@ -160,61 +160,69 @@
 
     <main>
       <div class="container">
-        <div>
+        <div class="d-flex justify-content-start">
           <h6 class="mt-5 d-inline-block">
-            <i class="fas fa-highlighter"></i> Highlights
+            <div><i class="fas fa-highlighter"></i> Highlights</div>
           </h6>
         </div>
         <hr />
         <div
-          id="carouselExampleCaptions"
-          class="carousel slide"
+          id="carouselExampleFade"
+          class="carousel slide carousel-fade"
           data-ride="carousel"
         >
           <ol class="carousel-indicators">
             <li
-              data-target="#carouselExampleCaptions"
+              data-target="#carouselExampleIndicators"
               data-slide-to="0"
               class="active"
             ></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
           </ol>
           <div class="carousel-inner">
-            <div class="carousel-item position-relative active">
+            <div class="carousel-item active mb-5">
               <img
-                src="https://images-1.gog-statics.com/631d16d2df90fb7af5c9ca479fd3cb2612d3fbdadbee2c1e919f89d7a325c266_product_tile_256.jpg"
+                src="./images/carousel1.jpg"
                 class="d-block w-100"
                 alt="..."
               />
-              <div class="carousel-caption d-none d-md-block">
-                <a href="#" class="btn btn-success btn-lg">Add to cart</a>
-              </div>
             </div>
-            <div class="carousel-item position-relative">
+            <div class="carousel-item mb-5">
               <img
-                src="https://images-2.gog-statics.com/7b2d5f2634bf8a8dfbda80623154131370886d5f47903c1c057a8d18a07b4c58_product_tile_256.jpg"
+                src="./images/carousel2.jpg"
                 class="d-block w-100"
                 alt="..."
               />
-              <div class="carousel-caption d-none d-md-block">
-                <a href="#" class="btn btn-success btn-lg">Add to cart</a>
-              </div>
             </div>
-            <div class="carousel-item position-relative">
+            <div class="carousel-item mb-5">
               <img
-                src="https://images-3.gog-statics.com/eb4ccfebafa91120a9a0a9ab33b1e30067492f2e8d00b6cbfdd7c0e6a0d7658b_product_tile_256.jpg"
+                src="./images/carousel3.jpg"
                 class="d-block w-100"
                 alt="..."
               />
-              <div class="carousel-caption d-none d-md-block">
-                <a href="#" class="btn btn-success btn-lg">Add to cart</a>
-              </div>
+            </div>
+
+            <div class="carousel-item mb-5">
+              <img
+                src="./images/carousel5.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item mb-5">
+              <img
+                src="./images/carousel6.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
             </div>
           </div>
           <a
             class="carousel-control-prev"
-            href="#carouselExampleCaptions"
+            href="#carouselExampleFade"
             role="button"
             data-slide="prev"
           >
@@ -223,7 +231,7 @@
           </a>
           <a
             class="carousel-control-next"
-            href="#carouselExampleCaptions"
+            href="#carouselExampleFade"
             role="button"
             data-slide="next"
           >
@@ -253,7 +261,7 @@
               </div>
             </div>
           </div>
-          <div class="col col-sm-2 col-md-3 mb-2">
+          <div class="col col-sm-6 col-md-3 mb-2">
             <div class="card">
               <img
                 src="https://images-1.gog-statics.com/fe09a510e6da4b4d65e943566e23220c9fc3e99f89378ed87c09cc6917511a96_product_tile_256.jpg"
@@ -269,7 +277,7 @@
               </div>
             </div>
           </div>
-          <div class="col col-sm-2 col-md-3 mb-2">
+          <div class="col col-sm-6 col-md-3 mb-2">
             <div class="card">
               <img
                 src="https://images-1.gog-statics.com/fe09a510e6da4b4d65e943566e23220c9fc3e99f89378ed87c09cc6917511a96_product_tile_256.jpg"
@@ -285,7 +293,7 @@
               </div>
             </div>
           </div>
-          <div class="col col-sm-2 col-md-3 mb-2">
+          <div class="col col-sm-6 col-md-3 mb-2">
             <div class="card">
               <img
                 src="https://images-1.gog-statics.com/fe09a510e6da4b4d65e943566e23220c9fc3e99f89378ed87c09cc6917511a96_product_tile_256.jpg"
@@ -337,7 +345,7 @@
       <hr />
       <!-- ------------------------------------------------------------------- -->
 
-      <div class="container now-on-sale my-5">
+      <div class="container my-5">
         <div class="d-flex justify-content-start">
           <div>
             <div class="mr-5">
@@ -363,56 +371,76 @@
 
       <!-- ----------------------------------------------------- -->
 
-      <div class="container my-5" style="height: 400px">
-        <div class="row h-100">
-          <div class="col-3">
-            <img
-              src="https://images-1.gog-statics.com/8232c34724cdf71ecbd551c401c680558097391a961b2ade1bc5aa1f08335149_product_tile_256.webp"
-              alt=""
-              class="h-100 w-100"
-            />
+      <div class="container my-5">
+        <div class="row">
+          <div class="col-12 col-md-3">
+            <div class="card img-fluid">
+              <img
+                class="card-img-top"
+                src="https://picsum.photos/200/400"
+                alt="Card image"
+              />
+              <div class="card-img-overlay">
+                <h4 class="card-title">John Doe</h4>
+                <p class="card-text">Some example text some example text.</p>
+                <a href="#" class="btn btn-primary">See Profile</a>
+              </div>
+            </div>
           </div>
-          <div class="col-3">
-            <img
-              src="https://images-4.gog-statics.com/be51652eac1eec9f283eb5519aaf3604998b8a71921058bb8d45bb1857e74f6b_product_tile_256.webp"
-              alt=""
-              class="h-100 w-100"
-            />
+          <div class="col-12 col-md-3">
+            <div class="card img-fluid">
+              <img
+                class="card-img-top"
+                src="https://picsum.photos/200/400"
+                alt="Card image"
+              />
+              <div class="card-img-overlay">
+                <h4 class="card-title">John Doe</h4>
+                <p class="card-text">Some example text some example text.</p>
+                <a href="#" class="btn btn-primary">See Profile</a>
+              </div>
+            </div>
           </div>
-          <div class="col-6">
-            <div class="row h-100">
-              <div class="col-6 mb-2">
-                <img
-                  src="https://images-3.gog-statics.com/ebf53a56825afe880a53ecb036dc2b989b4b5cbf891793da9d66a3b3f20e36b8_product_tile_256.webp"
-                  alt=""
-                  width="100%"
-                  height="100%"
-                />
+          <div class="col-12 col-md-3 position-relative">
+            <div class="card img-fluid">
+              <img
+                class="card-img-top"
+                src="https://picsum.photos/200/200"
+                alt="Card image"
+              />
+              <div class="card-img-overlay">
+                <h4 class="card-title">John Doe</h4>
+                <p class="card-text">Some example text some example text.</p>
+                <a href="#" class="btn btn-primary">See Profile</a>
               </div>
-              <div class="col-6 mb-2">
-                <img
-                  src="https://images-4.gog-statics.com/8f63dc385febb3fff5c7935b3194fe6a62c99f3bc8ecba424cfd0cec96b5d938_product_tile_256.webp"
-                  alt=""
-                  width="100%"
-                  height="100%"
-                />
+            </div>
+            <div class="card img-fluid">
+              <img
+                class="card-img-top"
+                src="https://picsum.photos/200/200"
+                alt="Card image"
+              />
+              <div class="card-img-overlay">
+                <h4 class="card-title">John Doe</h4>
+                <p class="card-text">Some example text some example text.</p>
+                <a href="#" class="btn btn-primary">See Profile</a>
               </div>
-              <div class="col-6 mb-2">
-                <img
-                  src="https://images-1.gog-statics.com/02f4abdb3e5ad980b457ad96efc757ffb7c0f2191a3c85938fc0dd2b17de4b77_product_tile_256.webp"
-                  alt=""
-                  width="100%"
-                  height="100%"
-                />
-              </div>
-              <div class="col-6 mb-2">
-                <img
-                  src="https://images-1.gog-statics.com/6eac13e0b18bf52b309b12f545e096b796b9d0751a235cb8ed56aa5cd406f604_product_tile_256.webp"
-                  alt=""
-                  width="100%"
-                  height="100%"
-                />
-              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3">
+            <div class="card img-fluid">
+              <img
+                class="card-img-top"
+                src="https://picsum.photos/200/200"
+                alt="Card image"
+              />
+            </div>
+            <div class="card img-fluid">
+              <img
+                class="card-img-top"
+                src="https://picsum.photos/200/200"
+                alt="Card image"
+              />
             </div>
           </div>
         </div>
@@ -428,52 +456,248 @@
         </div>
 
         <hr />
+      </div>
 
-        <div class="row">
-          <div class="col-6">
-            <img
-              src="https://images-4.gog-statics.com/30c6d68f5d0c8bbe9c2eb47f8781ec621a2f0ce40704c7dfe510533ca3a29f9e_product_tile_256.webp"
-              alt=""
-              width="100%"
-              height="100%"
-            />
-          </div>
-          <div class="col-6">
-            <div class="row">
-              <div class="col-6 mb-2">
-                <img
-                  src="https://images-2.gog-statics.com/f948f0cf91bdd76e13c0d77e10ee7a6dcdf0e7c8715f96b9b075e6129aa13688_product_tile_536.webp"
-                  alt=""
-                  width="100%"
-                  height="100%"
-                />
+      <div class="container">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-ride="carousel"
+          data-interval="false"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-12 col-lg-6 mb-sm-2 mb-md-5">
+                  <div class="card">
+                    <img
+                      src="https://images-3.gog-statics.com/1f844722c8b4ccf5bde04dbf16878d541af311b702d27f4616a8af3f54bb0d23_product_tile_536.webp"
+                      alt=""
+                      class="img-fluid"
+                    />
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-3 mb-sm-2 mb-md-0">
+                  <div class="mb-2">
+                    <div class="card">
+                      <img
+                        src="https://images-3.gog-statics.com/f3ba07480f127105d3560598bd99c3fd4dbc0ee423d75f006c225b9e251d178e_product_tile_256_2x.webp"
+                        class="img-fluid"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <p class="card-text">Some quick example text</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="card">
+                      <img
+                        src="https://images-3.gog-statics.com/f3ba07480f127105d3560598bd99c3fd4dbc0ee423d75f006c225b9e251d178e_product_tile_256_2x.webp"
+                        class="img-fluid"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <p class="card-text">Some quick example text</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-3 mb-sm-2 mb-md-0">
+                  <div class="mb-2">
+                    <div class="card">
+                      <img
+                        src="https://images-3.gog-statics.com/f3ba07480f127105d3560598bd99c3fd4dbc0ee423d75f006c225b9e251d178e_product_tile_256_2x.webp"
+                        class="img-fluid"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <p class="card-text">Some quick example text</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="card">
+                      <img
+                        src="https://images-3.gog-statics.com/f3ba07480f127105d3560598bd99c3fd4dbc0ee423d75f006c225b9e251d178e_product_tile_256_2x.webp"
+                        class="img-fluid"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <p class="card-text">Some quick example text</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="col-6 mb-2">
-                <img
-                  src="https://images-3.gog-statics.com/1f844722c8b4ccf5bde04dbf16878d541af311b702d27f4616a8af3f54bb0d23_product_tile_536.webp"
-                  alt=""
-                  width="100%"
-                  height="100%"
-                />
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-12 col-lg-6">
+                  <div class="card">
+                    <img
+                      src="https://images-3.gog-statics.com/1f844722c8b4ccf5bde04dbf16878d541af311b702d27f4616a8af3f54bb0d23_product_tile_536.webp"
+                      alt=""
+                      class="img-fluid"
+                    />
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-3 mb-sm-2 mb-md-0">
+                  <div class="mb-2">
+                    <div class="card">
+                      <img
+                        src="https://images-3.gog-statics.com/f3ba07480f127105d3560598bd99c3fd4dbc0ee423d75f006c225b9e251d178e_product_tile_256_2x.webp"
+                        class="img-fluid"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <p class="card-text">Some quick example text</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="card">
+                      <img
+                        src="https://images-3.gog-statics.com/f3ba07480f127105d3560598bd99c3fd4dbc0ee423d75f006c225b9e251d178e_product_tile_256_2x.webp"
+                        class="img-fluid"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <p class="card-text">Some quick example text</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-3 mb-sm-2 mb-md-0">
+                  <div class="mb-2">
+                    <div class="card">
+                      <img
+                        src="https://images-3.gog-statics.com/f3ba07480f127105d3560598bd99c3fd4dbc0ee423d75f006c225b9e251d178e_product_tile_256_2x.webp"
+                        class="img-fluid"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <p class="card-text">Some quick example text</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="card">
+                      <img
+                        src="https://images-3.gog-statics.com/f3ba07480f127105d3560598bd99c3fd4dbc0ee423d75f006c225b9e251d178e_product_tile_256_2x.webp"
+                        class="img-fluid"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <p class="card-text">Some quick example text</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="col-6 mb-2">
-                <img
-                  src="https://images-3.gog-statics.com/f3ba07480f127105d3560598bd99c3fd4dbc0ee423d75f006c225b9e251d178e_product_tile_256.webp"
-                  alt=""
-                  width="100%"
-                  height="100%"
-                />
-              </div>
-              <div class="col-6 mb-2">
-                <img
-                  src="https://images-4.gog-statics.com/30f6b549aed1e60b9108be9403c96d7ddf21a2834986488fa34362456ebca3c9_bs_background_1275.webp"
-                  alt=""
-                  width="100%"
-                  height="100%"
-                />
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-12 col-md-6 mb-sm-2 mb-md-5">
+                  <div class="card">
+                    <img
+                      src="https://images-3.gog-statics.com/1f844722c8b4ccf5bde04dbf16878d541af311b702d27f4616a8af3f54bb0d23_product_tile_536.webp"
+                      alt=""
+                      class="img-fluid"
+                    />
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-3 mb-sm-2 mb-md-0">
+                  <div class="mb-2">
+                    <div class="card">
+                      <img
+                        src="https://images-3.gog-statics.com/f3ba07480f127105d3560598bd99c3fd4dbc0ee423d75f006c225b9e251d178e_product_tile_256_2x.webp"
+                        class="img-fluid"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <p class="card-text">Some quick example text</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="card">
+                      <img
+                        src="https://images-3.gog-statics.com/f3ba07480f127105d3560598bd99c3fd4dbc0ee423d75f006c225b9e251d178e_product_tile_256_2x.webp"
+                        class="img-fluid"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <p class="card-text">Some quick example text</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-3 mb-sm-2 mb-md-0">
+                  <div class="mb-2">
+                    <div class="card">
+                      <img
+                        src="https://images-3.gog-statics.com/f3ba07480f127105d3560598bd99c3fd4dbc0ee423d75f006c225b9e251d178e_product_tile_256_2x.webp"
+                        class="img-fluid"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <p class="card-text">Some quick example text</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="card">
+                      <img
+                        src="https://images-3.gog-statics.com/f3ba07480f127105d3560598bd99c3fd4dbc0ee423d75f006c225b9e251d178e_product_tile_256_2x.webp"
+                        class="img-fluid"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <p class="card-text">Some quick example text</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
       </div>
 
@@ -494,7 +718,7 @@
         <hr />
 
         <div class="row mb-4">
-          <div class="col-4">
+          <div class="col col-12 col-md-4 mb-sm-2">
             <div class="card">
               <img
                 src="https://images-2.gog-statics.com/451610cb55afbb790628aeae5459c4e21466cf9a1246c5921b0004cbd4f06cbd_product_tile_256.webp"
@@ -508,7 +732,7 @@
               </div>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col col-12 col-md-4 mb-sm-2">
             <div class="card">
               <img
                 src="https://images-3.gog-statics.com/278c4ae8d21c5a975fedabcfadc739ed46ca308d6dfb7ea56484d2b82aa22612_product_tile_256.webp"
@@ -522,7 +746,7 @@
               </div>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col col-12 col-md-4 mb-sm-2">
             <div class="card">
               <img
                 src="https://images-3.gog-statics.com/569be39571dde6564a043f2f16f05246602cd1d52109dcb959c271f61600ad22_product_tile_256.webp"
@@ -538,7 +762,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-4">
+          <div class="col col-12 col-md-4 mb-sm-2">
             <div class="card">
               <img
                 src="https://images-1.gog-statics.com/3285b4eeb47310f44e208d8c13834d3ee185e9586550e67eaed42aff557a3e0e_product_tile_256.webp"
@@ -552,7 +776,7 @@
               </div>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col col-12 col-md-4 mb-sm-2">
             <div class="card">
               <img
                 src="https://images-4.gog-statics.com/8f63dc385febb3fff5c7935b3194fe6a62c99f3bc8ecba424cfd0cec96b5d938_product_tile_256.webp"
@@ -566,7 +790,7 @@
               </div>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col col-12 col-md-4 mb-sm-2">
             <div class="card">
               <img
                 src="https://images-2.gog-statics.com/ddb9e4f9ea4ba708272952f07b05c9683a2389799b1567e520048121d3b65ea5_product_tile_256.webp"
@@ -586,7 +810,7 @@
       <!-- -------------------------------------------------------------------- -->
       <div class="container mb-5">
         <div class="row">
-          <div class="col-7">
+          <div class="col col-12 col-md-7">
             <div>
               <div class="d-flex justify-content-between">
                 <div class="d-flex">
@@ -607,7 +831,7 @@
               <hr />
             </div>
 
-            <table class="table">
+            <table class="table bg-transparent">
               <tbody>
                 <tr>
                   <th scope="row">
@@ -618,7 +842,7 @@
                       width="76px"
                     />
                   </th>
-                  <td class="col-4">Mark</td>
+                  <td class="col col-12 col-4">Mark</td>
                   <td>$19.99</td>
                 </tr>
                 <tr>
@@ -731,8 +955,9 @@
                 </tr>
               </tbody>
             </table>
+            <hr />
           </div>
-          <div class="col-5">
+          <div class="col col-12 col-md-5">
             <div class="d-flex">
               <img
                 src="./images/featured.svg"
@@ -743,41 +968,113 @@
               <div class="ml-2"><h5>Featured</h5></div>
             </div>
             <hr />
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <div class="card-deck">
+                    <div class="card">
+                      <img
+                        src="https://images-3.gog-statics.com/dc86fe8bc312beeab687bfc9ec41ec131fbfd7155c8a085e418957e7ac26ace2_curated_collection_huge_tile.jpg"
+                        class="img-fluid"
+                        alt="..."
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row no-gutters">
+                <div class="col col-12 col-md-6">
+                  <div class="card-deck">
+                    <div class="card">
+                      <img
+                        src="https://cdn.discordapp.com/attachments/789230399283920926/814896533249851432/unknown.png"
+                        class="img-fluid"
+                        alt="..."
+                      />
+                    </div>
+                  </div>
+
+                  <div class="card-deck">
+                    <div class="card">
+                      <img
+                        src="https://cdn.discordapp.com/attachments/789230399283920926/814896669007151114/unknown.png"
+                        class="img-fluid"
+                        alt="..."
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="col col-12 col-md-6">
+                  <div class="card-deck">
+                    <div class="card">
+                      <img
+                        src="https://cdn.discordapp.com/attachments/789230399283920926/814896855992238140/unknown.png"
+                        class="img-fluid"
+                        alt="..."
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-sm-flex-column d-md-flex">
+                <div class="card-deck">
+                  <div class="card">
+                    <img
+                      src="https://cdn.discordapp.com/attachments/789230399283920926/814896725252374579/unknown.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+
+                <div class="card-deck">
+                  <div class="card">
+                    <img
+                      src="https://cdn.discordapp.com/attachments/789230399283920926/814896787806617660/unknown.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="container mb-5">
-        <div>
-          <div class="d-flex">
-            <img src="./images/news.svg" width="20px" height="20px" alt="" />
-            <div class="ml-2"><h5>News</h5></div>
-          </div>
+      <div class="container" style="max-height: 280px">
+        <div class="d-flex">
+          <img src="./images/news.svg" width="20px" height="20px" alt="" />
+          <div class="ml-2"><h5>News</h5></div>
         </div>
+
         <hr />
-        <div style="height: 320px">
-          <div class="row h-100">
-            <div class="col-6">
+
+        <div class="row">
+          <div class="col-6">
+            <div class="card">
               <img
-                src="https://images-2.gog-statics.com/86419818d059039da76927bb2a882028b0867c50cb38e6f9e83671212e0fee54_bs_logo_big.webp"
+                src="https://picsum.photos/570/265?"
                 alt=""
                 class="img-fluid"
               />
             </div>
-            <div class="col-3">
+          </div>
+          <div class="col-3">
+            <div class="card">
               <img
-                src="https://images-3.gog-statics.com/c205a62b2d24dddb2a3ef812ee0eab28df842b279864b8e36039cbdd49f4680f_product_tile_256.webp"
+                src="https://picsum.photos/300/300"
                 alt=""
-                width="100%"
-                height="100%"
+                class="img-fluid"
               />
             </div>
-            <div class="col-3">
+          </div>
+          <div class="col-3">
+            <div class="card">
               <img
-                src="https://images-4.gog-statics.com/55421003997b40eed483d66a1b07c165d12c18e0ea95abafc7a9d374fbabcbe4_product_tile_256.webp"
+                src="https://picsum.photos/300/300?"
                 alt=""
-                width="100%"
-                height="100%"
+                class="img-fluid"
               />
             </div>
           </div>
@@ -785,10 +1082,36 @@
       </div>
     </main>
 
-    <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <div class="card">
+            <img src="./images/tile (32).jpg" alt="" class="img-fluid" />
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card">
+            <img src="./images/tile (33).jpg" alt="" class="img-fluid" />
+          </div>
+          <div class="card">
+            <img src="./images/tile (33).jpg" alt="" class="img-fluid" />
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card">
+            <img src="./images/tile (35).jpg" alt="" class="img-fluid" />
+          </div>
+          <div class="card">
+            <img src="./images/tile (35).jpg" alt="" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="mt-5">
       <div class="nav-footer-wrapper">
         <div class="container">
-          <div class="d-flex justify-content-between">
+          <div class="d-flex justify-content-between align-items-center pt-2">
             <div class="d-flex justify-content-between">
               <p><a href="#">Redeem Code</a></p>
               <p class="ml-2"><a href="#">Reclaim your game</a></p>

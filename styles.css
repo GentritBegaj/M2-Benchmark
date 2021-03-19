@@ -1,6 +1,22 @@
+html,
+body {
+  height: 100%;
+}
+
 body {
   background-color: #d8d8d8;
   font-family: "Belgrano", serif;
+  text-align: center;
+}
+
+/* * {
+  margin: 0;
+  padding: 0;
+  border: 0;
+} */
+
+img:hover {
+  opacity: 0.8;
 }
 
 nav {
@@ -12,14 +28,11 @@ main {
   margin-top: 30px;
 }
 
-.btn.btn-success.btn-lg {
-  position: absolute;
-  right: 0px;
-  bottom: 20px;
-}
-
 p {
   font-size: 0.8rem;
+}
+footer p {
+  font-size: 0.9rem;
 }
 
 .line {
@@ -45,6 +58,21 @@ div a:hover {
   text-align: right;
 }
 
+.table tr:hover {
+  background-color: white;
+  color: black;
+}
+
 .nav-footer-wrapper {
   background-color: #262626;
+}
+
+#text-div {
+  position: absolute;
+  bottom: 30px;
+  left: 80px;
+}
+
+#carouselExampleIndicators {
+  margin-top: 100px;
 }
